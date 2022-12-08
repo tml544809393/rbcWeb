@@ -1,0 +1,1875 @@
+<!DOCTYPE HTML>
+<html class="oxh met-web">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,minimal-ui">
+  <meta name="format-detection" content="telephone=no">
+  <title>瑞佰创物联科技 - 动物标签,智慧养殖,溯源管理,生物资产监管</title>
+  <meta name="description"
+    content="瑞佰创集团是一家为畜牧业提供信息化、智能化、数字化解决方案和服务的综合服务机构，集畜牧行业各种软硬件研发、生产、销售、咨询、服务为一体的智慧农业物联网公司，并于2020年被认定国家高新技术企业。">
+  <meta name="keywords" content="动物标签,智慧养殖,溯源管理,生物资产监管">
+  <meta name="generator" content="MetInfo V7.7" data-variable="|cn|cn|mui891|10001|10001|0" data-user_name="">
+  <link href="favicon.ico?1569376708" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="public/web/css/basic.css?1666344189">
+  <link rel="stylesheet" type="text/css" href="templates/mui891/cache/index_cn.css?1670220788">
+
+  <style>
+    .webui-popover-content {
+      display: none
+    }
+
+    .webui-popover-rtl {
+      direction: rtl;
+      text-align: right
+    }
+
+    .webui-popover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      display: none;
+      min-width: 50px;
+      min-height: 32px;
+      padding: 1px;
+      text-align: left;
+      white-space: normal;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ccc;
+      border: 1px solid #eee;
+      border-radius: 6px;
+      -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15)
+    }
+
+    .webui-popover.top,
+    .webui-popover.top-left,
+    .webui-popover.top-right {
+      margin-top: -10px
+    }
+
+    .webui-popover.right,
+    .webui-popover.right-top,
+    .webui-popover.right-bottom {
+      margin-left: 10px
+    }
+
+    .webui-popover.bottom,
+    .webui-popover.bottom-left,
+    .webui-popover.bottom-right {
+      margin-top: 10px
+    }
+
+    .webui-popover.left,
+    .webui-popover.left-top,
+    .webui-popover.left-bottom {
+      margin-left: -10px
+    }
+
+    .webui-popover.pop {
+      -webkit-transform: scale(0.8);
+      -o-transform: scale(0.8);
+      transform: scale(0.8);
+      -webkit-transition: transform .15s cubic-bezier(0.3, 0, 0, 1.5);
+      -o-transition: transform .15s cubic-bezier(0.3, 0, 0, 1.5);
+      transition: transform .15s cubic-bezier(0.3, 0, 0, 1.5);
+      opacity: 0;
+      filter: alpha(opacity=0)
+    }
+
+    .webui-popover.pop-out {
+      -webkit-transition-property: "opacity,transform";
+      -o-transition-property: "opacity,transform";
+      transition-property: "opacity,transform";
+      -webkit-transition: .15s linear;
+      -o-transition: .15s linear;
+      transition: .15s linear;
+      opacity: 0;
+      filter: alpha(opacity=0)
+    }
+
+    .webui-popover.fade,
+    .webui-popover.fade-out {
+      -webkit-transition: opacity .15s linear;
+      -o-transition: opacity .15s linear;
+      transition: opacity .15s linear;
+      opacity: 0;
+      filter: alpha(opacity=0)
+    }
+
+    .webui-popover.out {
+      opacity: 0;
+      filter: alpha(opacity=0)
+    }
+
+    .webui-popover.in {
+      -webkit-transform: none;
+      -o-transform: none;
+      transform: none;
+      opacity: 1;
+      filter: alpha(opacity=100)
+    }
+
+    .webui-popover .webui-popover-content {
+      padding: 9px 14px;
+      overflow: auto;
+      display: block
+    }
+
+    .webui-popover .webui-popover-content>div:first-child {
+      width: 99%
+    }
+
+    .webui-popover-inner .close {
+      font-family: arial;
+      margin: 8px 10px 0 0;
+      float: right;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: .2;
+      filter: alpha(opacity=20);
+      text-decoration: none
+    }
+
+    .webui-popover-inner .close:hover,
+    .webui-popover-inner .close:focus {
+      opacity: .5;
+      filter: alpha(opacity=50)
+    }
+
+    .webui-popover-inner .close:after {
+      content: "\00D7";
+      width: .8em;
+      height: .8em;
+      padding: 4px;
+      position: relative
+    }
+
+    .webui-popover-title {
+      padding: 8px 14px;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+      background-color: #fff;
+      border-bottom: 1px solid #f2f2f2;
+      border-radius: 5px 5px 0 0
+    }
+
+    .webui-popover-content {
+      padding: 9px 14px;
+      overflow: auto;
+      display: none
+    }
+
+    .webui-popover-inverse {
+      background-color: #333;
+      color: #eee
+    }
+
+    .webui-popover-inverse .webui-popover-title {
+      background: #333;
+      border-bottom: 1px solid #3b3b3b;
+      color: #eee
+    }
+
+    .webui-no-padding .webui-popover-content {
+      padding: 0
+    }
+
+    .webui-no-padding .list-group-item {
+      border-right: none;
+      border-left: none
+    }
+
+    .webui-no-padding .list-group-item:first-child {
+      border-top: 0
+    }
+
+    .webui-no-padding .list-group-item:last-child {
+      border-bottom: 0
+    }
+
+    .webui-popover>.webui-arrow,
+    .webui-popover>.webui-arrow:after {
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid
+    }
+
+    .webui-popover>.webui-arrow {
+      border-width: 11px
+    }
+
+    .webui-popover>.webui-arrow:after {
+      border-width: 10px;
+      content: ""
+    }
+
+    .webui-popover.top>.webui-arrow,
+    .webui-popover.top-right>.webui-arrow,
+    .webui-popover.top-left>.webui-arrow {
+      bottom: -11px;
+      left: 50%;
+      margin-left: -11px;
+      border-top-color: #999;
+      border-top-color: #eee;
+      border-bottom-width: 0
+    }
+
+    .webui-popover.top>.webui-arrow:after,
+    .webui-popover.top-right>.webui-arrow:after,
+    .webui-popover.top-left>.webui-arrow:after {
+      content: " ";
+      bottom: 1px;
+      margin-left: -10px;
+      border-top-color: #fff;
+      border-bottom-width: 0
+    }
+
+    .webui-popover.right>.webui-arrow,
+    .webui-popover.right-top>.webui-arrow,
+    .webui-popover.right-bottom>.webui-arrow {
+      top: 50%;
+      left: -11px;
+      margin-top: -11px;
+      border-left-width: 0;
+      border-right-color: #999;
+      border-right-color: #eee
+    }
+
+    .webui-popover.right>.webui-arrow:after,
+    .webui-popover.right-top>.webui-arrow:after,
+    .webui-popover.right-bottom>.webui-arrow:after {
+      content: " ";
+      left: 1px;
+      bottom: -10px;
+      border-left-width: 0;
+      border-right-color: #fff
+    }
+
+    .webui-popover.bottom>.webui-arrow,
+    .webui-popover.bottom-right>.webui-arrow,
+    .webui-popover.bottom-left>.webui-arrow {
+      top: -11px;
+      left: 50%;
+      margin-left: -11px;
+      border-bottom-color: #999;
+      border-bottom-color: #eee;
+      border-top-width: 0
+    }
+
+    .webui-popover.bottom>.webui-arrow:after,
+    .webui-popover.bottom-right>.webui-arrow:after,
+    .webui-popover.bottom-left>.webui-arrow:after {
+      content: " ";
+      top: 1px;
+      margin-left: -10px;
+      border-bottom-color: #fff;
+      border-top-width: 0
+    }
+
+    .webui-popover.left>.webui-arrow,
+    .webui-popover.left-top>.webui-arrow,
+    .webui-popover.left-bottom>.webui-arrow {
+      top: 50%;
+      right: -11px;
+      margin-top: -11px;
+      border-right-width: 0;
+      border-left-color: #999;
+      border-left-color: #eee
+    }
+
+    .webui-popover.left>.webui-arrow:after,
+    .webui-popover.left-top>.webui-arrow:after,
+    .webui-popover.left-bottom>.webui-arrow:after {
+      content: " ";
+      right: 1px;
+      border-right-width: 0;
+      border-left-color: #fff;
+      bottom: -10px
+    }
+
+    .webui-popover-inverse.top>.webui-arrow,
+    .webui-popover-inverse.top-left>.webui-arrow,
+    .webui-popover-inverse.top-right>.webui-arrow,
+    .webui-popover-inverse.top>.webui-arrow:after,
+    .webui-popover-inverse.top-left>.webui-arrow:after,
+    .webui-popover-inverse.top-right>.webui-arrow:after {
+      border-top-color: #333
+    }
+
+    .webui-popover-inverse.right>.webui-arrow,
+    .webui-popover-inverse.right-top>.webui-arrow,
+    .webui-popover-inverse.right-bottom>.webui-arrow,
+    .webui-popover-inverse.right>.webui-arrow:after,
+    .webui-popover-inverse.right-top>.webui-arrow:after,
+    .webui-popover-inverse.right-bottom>.webui-arrow:after {
+      border-right-color: #333
+    }
+
+    .webui-popover-inverse.bottom>.webui-arrow,
+    .webui-popover-inverse.bottom-left>.webui-arrow,
+    .webui-popover-inverse.bottom-right>.webui-arrow,
+    .webui-popover-inverse.bottom>.webui-arrow:after,
+    .webui-popover-inverse.bottom-left>.webui-arrow:after,
+    .webui-popover-inverse.bottom-right>.webui-arrow:after {
+      border-bottom-color: #333
+    }
+
+    .webui-popover-inverse.left>.webui-arrow,
+    .webui-popover-inverse.left-top>.webui-arrow,
+    .webui-popover-inverse.left-bottom>.webui-arrow,
+    .webui-popover-inverse.left>.webui-arrow:after,
+    .webui-popover-inverse.left-top>.webui-arrow:after,
+    .webui-popover-inverse.left-bottom>.webui-arrow:after {
+      border-left-color: #333
+    }
+
+    .webui-popover i.icon-refresh:before {
+      content: ""
+    }
+
+    .webui-popover i.icon-refresh {
+      display: block;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      margin-top: -15px;
+      margin-left: -15px;
+      margin-right: -15px;
+      background: url(../../images/loading.gif) center/contain no-repeat
+    }
+
+    @-webkit-keyframes rotate {
+      100% {
+        -webkit-transform: rotate(360deg)
+      }
+    }
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    .webui-popover-backdrop {
+      background-color: rgba(0, 0, 0, .65);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9998
+    }
+
+    .webui-popover .dropdown-menu {
+      display: block;
+      position: relative;
+      top: 0;
+      border: none;
+      box-shadow: none;
+      float: none
+    }
+/* 米拓企业建站系统 Copyright (C) 长沙米拓信息技术有限公司 (https://www.metinfo.cn). All rights reserved. */
+/*在线客服*/
+.onlinebox{background-color:#fff;-webkit-box-shadow:0 5px 9px rgba(4,0,0,.17);box-shadow:0 5px 9px rgba(4,0,0,.17);z-index:1699}
+.onlinebox,
+.onlinebox *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}
+.onlinebox-box{width:160px}
+.onlinebox .onlinebox-top{padding:20px 20px 10px;background:#444;font-size:18px;color:#fff}
+.onlinebox .onlinebox-top h4{margin: 0;color: #fff;}
+.onlinebox .onlinebox-top-btn{position: absolute;top: 0;right: 10px;}
+.onlinebox .onlinebox-close,
+.onlinebox .onlinebox-min{float:right;color:#fff}
+.onlinebox .onlinebox-close{position:relative;top:-2px}
+.onlinebox .onlinebox-min{margin-right:10px}
+.onlinebox .onlinebox-close:hover,
+.onlinebox .onlinebox-min:hover{color:#fff;text-decoration:none}
+.onlinebox .onlinebox-open,
+.onlinebox.min .onlinebox-box{display:none}
+.onlinebox.min .onlinebox-open{display:block;cursor:pointer;padding:0 10px;background:#444;font-size:18px;line-height:40px;color:#fff}
+.onlinebox-center{padding:5px 0;margin-bottom:0}
+.onlinebox .list-group-item{padding:0}
+.onlinebox .list-group-item .fa,
+.onlinebox .list-group-item img{width:16px;float:left;font-size:16px;line-height:16px}
+.onlinebox .met_qq .fa{color:#62a8ea}
+.onlinebox .met_facebook .fa{color:#4267b2}
+.onlinebox .met_skype .fa{color:#00AFF0}
+.onlinebox .list-group-item img{height:16px}
+.onlinebox .list-group-item .list-group-item-text{padding:5px 1.25rem}
+.onlinebox .list-group-item .list-group-item-text:hover{background:#f8f8f8}
+.onlinebox .list-group-item .list-group-item-text a{display:block;color:#76838f}
+.onlinebox .list-group-item .list-group-item-text a:hover{text-decoration:none}
+.onlinebox .list-group-item .list-group-item-text span{display:table-cell;padding-left:5px;word-break:break-all;line-height:16px}
+.onlinebox .onlinebox-bottom{border-top:1px solid #eee;padding:.75rem 1.25rem}
+.onlinebox .onlinebox-bottom p{margin-bottom:0}
+  </style>
+  <script>(function () { var t = navigator.userAgent; (t.indexOf("rv:11") >= 0 || t.indexOf("MSIE 10") >= 0) && document.write("<script src=\"public/plugins/html5shiv/html5shiv.min.js\"><\/script>") })();</script>
+</head>
+<!--[if lte IE 9]>
+<div class="text-xs-center m-b-0 bg-blue-grey-100 alert">
+    <button type="button" class="close" aria-label="Close" data-dismiss="alert">
+        <span aria-hidden="true">×</span>
+    </button>
+    你正在使用一个 的浏览器。请以提高您的体验。</div>
+<![endif]-->
+
+<body>
+
+  <body class="met-navfixed">
+    <header class='met-head navbar-fixed-top' m-id='1' m-type='head_nav'">
+    <div id=" met_mob_nav_container" class="head_nav_met_28_2_1">
+      <ul class="ul1">
+        <li class="search clearfix">
+          <span class="prev w080">
+            <a id="word_home_" href='' title='网站首页'>网站首页</a>
+          </span>
+          <div id="met_mob_nav_close">
+            <i class="icon wb-close"></i>
+          </div>
+        </li>
+        <li class="met_nomore min_nav" data-index="0">
+          <a href="casestudy/" title="项目案例" target='_self'>
+            <span style=''>项目案例</span> <i class="icon wb-chevron-right"></i>
+          </a>
+        </li>
+        <li class="met_hasmore min_nav" data-index="1">
+          <a href="javascript:;" title="解决方案" target='_self'>
+            <span style=''>解决方案</span> <i class="icon wb-chevron-down"></i>
+          </a>
+          <ul class="ul2">
+            <li>
+              <a href="solution/" target='_self' title="解决方案">全部</a>
+            </li>
+            <li>
+              <a href="solution/list-252.html" title="智慧牧场" target='_self'>
+                <span style=''>智慧牧场</span> </a>
+            </li>
+            <li>
+              <a href="solution/list-253.html" title="屠宰溯源" target='_self'>
+                <span style=''>屠宰溯源</span> </a>
+            </li>
+            <li>
+              <a href="solution/list-254.html" title="综合性牧场建设" target='_self'>
+                <span style=''>综合性牧场建设</span> </a>
+            </li>
+            <li>
+              <a href="solution/list-255.html" title="政府" target='_self'>
+                <span style=''>政府</span> </a>
+            </li>
+          </ul>
+        </li>
+        <li class="met_hasmore min_nav" data-index="2">
+          <a href="javascript:;" title="关于我们" target='_self'>
+            <span style=''>关于我们</span> <i class="icon wb-chevron-down"></i>
+          </a>
+          <ul class="ul2">
+            <li>
+              <a href="about/85.html" title="公司简介" target='_self'>
+                <span style=''>公司简介</span> </a>
+            </li>
+            <li>
+              <a href="about/86.html" title="企业文化" target='_self'>
+                <span style=''>企业文化</span> </a>
+            </li>
+            <li>
+              <a href="about/87.html" title="联系我们" target='_self'>
+                <span style=''>联系我们</span> </a>
+            </li>
+            <li>
+              <a href="qualification/" title="资质荣誉" target='_self'>
+                <span style=''>资质荣誉</span> </a>
+            </li>
+          </ul>
+        </li>
+        <li class="met_hasmore min_nav" data-index="3">
+          <a href="javascript:;" title="产品中心" target='_self'>
+            <span style=''>产品中心</span> <i class="icon wb-chevron-down"></i>
+          </a>
+          <ul class="ul2">
+            <li>
+              <a href="product/" target='_self' title="产品中心">全部</a>
+            </li>
+            <li>
+              <a href="javascript:;" title="电子标识" target='_self'>
+                <span style=''>电子标识</span> </a>
+              <ul class="ul-block ul3">
+                <li>
+                  <a href="product/list-146.html" target='_self' title="电子标识">全部</a>
+                </li>
+                <li>
+                  <a href="product/list-182.html" title="" target='_self'>
+                    <span style=''>牛</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-183.html" title="" target='_self'>
+                    <span style=''>羊</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-184.html" title="" target='_self'>
+                    <span style=''>猪</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-185.html" title="" target='_self'>
+                    <span style=''>马</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-186.html" title="" target='_self'>
+                    <span style=''>禽类</span> </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;" title="普通标识" target='_self'>
+                <span style=''>普通标识</span> </a>
+              <ul class="ul-block ul3">
+                <li>
+                  <a href="product/list-150.html" target='_self' title="普通标识">全部</a>
+                </li>
+                <li>
+                  <a href="product/list-177.html" title="" target='_self'>
+                    <span style=''>牛</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-178.html" title="" target='_self'>
+                    <span style=''>羊</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-179.html" title="" target='_self'>
+                    <span style=''>猪</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-180.html" title="" target='_self'>
+                    <span style=''>马</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-181.html" title="" target='_self'>
+                    <span style=''>禽类</span> </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="product/list-147.html" title="阅读器" target='_self'>
+                <span style=''>阅读器</span> </a>
+            </li>
+            <li>
+              <a href="product/list-149.html" title="配套工具" target='_self'>
+                <span style=''>配套工具</span> </a>
+            </li>
+            <li>
+              <a href="javascript:;" title="称重分栏" target='_self'>
+                <span style=''>称重分栏</span> </a>
+              <ul class="ul-block ul3">
+                <li>
+                  <a href="product/list-145.html" target='_self' title="称重分栏">全部</a>
+                </li>
+                <li>
+                  <a href="product/list-192.html" title="" target='_self'>
+                    <span style=''>牛</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-193.html" title="" target='_self'>
+                    <span style=''>羊</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-194.html" title="" target='_self'>
+                    <span style=''>猪</span> </a>
+                </li>
+                <li>
+                  <a href="product/list-195.html" title="" target='_self'>
+                    <span style=''>马</span> </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="product/list-152.html" title="兽用B超" target='_self'>
+                <span style=''>兽用B超</span> </a>
+            </li>
+            <li>
+              <a href="product/list-151.html" title="传感器" target='_self'>
+                <span style=''>传感器</span> </a>
+            </li>
+            <li>
+              <a href="product/list-144.html" title="定位器" target='_self'>
+                <span style=''>定位器</span> </a>
+            </li>
+          </ul>
+        </li>
+        <li class="met_hasmore min_nav" data-index="4">
+          <a href="javascript:;" title="新闻资讯" target='_self'>
+            <span style=''>新闻资讯</span> <i class="icon wb-chevron-down"></i>
+          </a>
+          <ul class="ul2">
+            <li>
+              <a href="news/" target='_self' title="新闻资讯">全部</a>
+            </li>
+            <li>
+              <a href="news/list-99.html" title="公司新闻" target='_self'>
+                <span style=''>公司新闻</span> </a>
+            </li>
+            <li>
+              <a href="news/list-100.html" title="公司展会" target='_self'>
+                <span style=''>公司展会</span> </a>
+            </li>
+            <li>
+              <a href="news/list-101.html" title="行业资讯" target='_self'>
+                <span style=''>行业资讯</span> </a>
+            </li>
+          </ul>
+        </li>
+        <li class="met_hasmore min_nav" data-index="5">
+          <a href="javascript:;" title="服务支持" target='_self'>
+            <span style=''>服务支持</span> <i class="icon wb-chevron-down"></i>
+          </a>
+          <ul class="ul2">
+            <li>
+              <a href="support/" target='_self' title="服务支持">全部</a>
+            </li>
+            <li>
+              <a href="guide/" title="操作指南" target='_self'>
+                <span style=''>操作指南</span> </a>
+            </li>
+            <li>
+              <a href="support/list-153.html" title="工具下载" target='_self'>
+                <span style=''>工具下载</span> </a>
+            </li>
+            <li>
+              <a href="support/list-154.html" title="文档下载" target='_self'>
+                <span style=''>文档下载</span> </a>
+            </li>
+            <li>
+              <a href="feedback/" title="信息反馈" target='_self'>
+                <span style=''>信息反馈</span> </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div style="text-align:center; padding-top:20px;" class="minidiv">
+        <!-- 简繁体多语言 -->
+        <li class="met-langlist nav-item vertical-align" m-id='lang' m-type='lang'>
+          <div class="inline-block dropdown ">
+            <a href="https://www.raybaca.com/index-en.html" title="English"
+              class="btn btn-outline btn-default btn-squared btn-lang">
+              <img src="public/images/flag/en.gif" alt="English" style="max-width:100%;">
+              <span>English</span>
+            </a>
+          </div>
+        </li>
+        <!-- 简繁体多语言 -->
+      </div>
+      </div>
+      </div>
+      <div id="container" class="head_nav_met_28_2_1">
+        <h1 hidden>瑞佰创物联科技</h1>
+        <div id="met_masthead" class="clearfix">
+          <div id="met_masthead_wrap">
+            <div id="met_subinfo" class="lg-container clearfix hidden-sm hidden-xs">
+            </div>
+            <div id="met_global_nav" class="lg-container" style="min-height:40px; height:auto;">
+              <nav class="clearfix">
+                <div id="met_logo">
+                  <a href="" title="瑞佰创物联科技">
+                    <img src="upload/202207/1658391753.png" alt="瑞佰创物联科技" class="hidden-sm-down">
+                    <img src="upload/202007/1594705433.png" alt="瑞佰创物联科技" class="hidden-md-up">
+                  </a>
+                </div>
+                <div class="met_masthead_rightside">
+                  <ul class="pull-left">
+                    <li class="met_search dropdown">
+                      <a class="dropdown-toggle met-index-toggle" id="searchdropmenu">
+                        <i class="icon wb-search"></i>
+                      </a>
+                      <div id="met_search_box" aria-labelledby="searchdropmenu">
+                        <div class="triangle"></div>
+                        <form method="get" class="page-search-form" role="search" action="search/index.php?lang=cn"
+                          m-id="search_global" m-type="nocontent">
+                          <input type="hidden" name="lang" value="cn" />
+                          <input type="hidden" name="stype" value="0" />
+
+                          <div class="input-search input-search-dark">
+                            <button type="submit" class="input-search-btn"><i class="icon wb-search"
+                                aria-hidden="true"></i></button>
+                            <input type="text" class="form-control input-lg" name="searchword" value=""
+                              placeholder="请输入搜索关键词！">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+                    <li class="met_show_more visible-sm visible-xs" id="mob_menuitem">
+                      <a href="#">
+                        <i class="icon wb-menu"></i>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="clearfix hidden-sm hidden-xs pull-left" style="margin-left:10px">
+                    <!-- 简繁体多语言 -->
+                    <li class="met-langlist nav-item vertical-align" m-id='lang' m-type='lang'>
+                      <div class="inline-block dropdown ">
+                        <a href="https://www.raybaca.com/index-en.html" title="English"
+                          class="btn btn-outline btn-default btn-squared btn-lang">
+                          <img src="public/images/flag/en.gif" alt="English" style="max-width:100%;">
+                          <span>English</span>
+                        </a>
+                      </div>
+                    </li>
+
+                    <!-- 简繁体多语言 -->
+                  </div>
+                </div>
+
+                <ul class="nav_ul met_masthead_cata hidden-sm hidden-xs">
+                  <li>
+                    <a href='' title='网站首页' class="
+                                                                        active
+                                " id="word_home_">网站首页</a>
+                  </li>
+                  <li>
+                    <a data-menutype="megamenu" target='_self' data-section="metmm_267" href="casestudy/" title="项目案例"
+                      class="">
+                      <span style=''>项目案例</span> </a>
+                  </li>
+                  <li>
+                    <a data-menutype="megamenu" target='_self' data-section="metmm_140" href="solution/" title="解决方案"
+                      class="">
+                      <span style=''>解决方案</span> </a>
+                  </li>
+                  <li>
+                    <a data-menutype="megamenu" target='_self' data-section="metmm_79" href="about/" title="关于我们"
+                      class="">
+                      <span style=''>关于我们</span> </a>
+                  </li>
+                  <li>
+                    <a data-menutype="megamenu" target='_self' data-section="metmm_80" href="product/" title="产品中心"
+                      class="">
+                      <span style=''>产品中心</span> </a>
+                  </li>
+                  <li>
+                    <a data-menutype="megamenu" target='_self' data-section="metmm_83" href="news/" title="新闻资讯"
+                      class="">
+                      <span style=''>新闻资讯</span> </a>
+                  </li>
+                  <li>
+                    <a data-menutype="megamenu" target='_self' data-section="metmm_201" href="support/" title="服务支持"
+                      class="">
+                      <span style=''>服务支持</span> </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div id="met_global_nav_content">
+            <div class="lg-container">
+
+              <!-- about一级 -->
+              <div class="met_menu_section" data-section="metmm_267">
+                <div class="row">
+                </div>
+              </div>
+              <!--  -->
+
+              <!-- about一级 -->
+              <div class="met_menu_section" data-section="metmm_140">
+                <div class="row">
+                  <div class="width_sty     " style="width:25%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="solution/list-252.html" title="智慧牧场" target='_self'>
+                          智慧牧场 </a>
+                      </h3>
+                      <a href="solution/73.html" title="" target=_self>
+                        <div>
+                          <img alt="" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202205/1651907718.jpg" />
+                        </div>
+                        <h4></h4>
+                      </a>
+                      <a href="solution/list-252.html" title="智慧牧场" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:25%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="solution/list-253.html" title="屠宰溯源" target='_self'>
+                          屠宰溯源 </a>
+                      </h3>
+                      <a href="solution/150.html" title="" target=_self>
+                        <div>
+                          <img alt="" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202205/1651896663.jpg" />
+                        </div>
+                        <h4></h4>
+                      </a>
+                      <a href="solution/list-253.html" title="屠宰溯源" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:25%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="solution/list-254.html" title="综合性牧场建设" target='_self'>
+                          综合性牧场建设 </a>
+                      </h3>
+                      <a href="solution/64.html" title="" target=_self>
+                        <div>
+                          <img alt="" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202209/1662433818.png" />
+                        </div>
+                        <h4></h4>
+                      </a>
+                      <a href="solution/list-254.html" title="综合性牧场建设" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:25%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="solution/list-255.html" title="政府" target='_self'>
+                          政府 </a>
+                      </h3>
+                      <a href="solution/69.html" title="" target=_self>
+                        <div>
+                          <img alt="" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202209/1662433820.png" />
+                        </div>
+                        <h4></h4>
+                      </a>
+                      <a href="solution/list-255.html" title="政府" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+
+              <!-- about一级 -->
+              <div class="met_menu_section" data-section="metmm_79">
+                <div class="row">
+                  <div class="width_sty met_box_wrap     " style="width:25%">
+                    <h3>
+                      <a class="twobox_" href="about/85.html" title="公司简介" target='_self'>
+                        公司简介 </a>
+                    </h3>
+                    <a href="about/85.html" title="公司简介" target='_self' class="clearfix db">
+                      <img alt="公司简介" title="公司简介" class="img-responsive left-block met_nav_img mb12"
+                        src="upload/202007/1595582022.jpg">
+                      <p class="mb15">从事动物行业管理物联网RFID产品的研发、生产、销售和RFID畜牧相关系统软件项目开发与服务</p>
+                    </a>
+                    <a href="about/85.html" title="公司简介" class="met_btn" target='_self'>查看更多 ></a>
+                  </div>
+                  <div class="width_sty met_box_wrap     " style="width:25%">
+                    <h3>
+                      <a class="twobox_" href="about/86.html" title="企业文化" target='_self'>
+                        企业文化 </a>
+                    </h3>
+                    <a href="about/86.html" title="企业文化" target='_self' class="clearfix db">
+                      <img alt="企业文化" title="企业文化" class="img-responsive left-block met_nav_img mb12"
+                        src="upload/202007/1595585260.jpg">
+                      <p class="mb15">致力于为客户提供物联网+畜牧业解决方案、系统集成、项目实施、技术支持、顾问咨询等服务</p>
+                    </a>
+                    <a href="about/86.html" title="企业文化" class="met_btn" target='_self'>查看更多 ></a>
+                  </div>
+                  <div class="width_sty met_box_wrap     " style="width:25%">
+                    <h3>
+                      <a class="twobox_" href="about/87.html" title="联系我们" target='_self'>
+                        联系我们 </a>
+                    </h3>
+                    <a href="about/87.html" title="联系我们" target='_self' class="clearfix db">
+                      <img alt="联系我们" title="联系我们" class="img-responsive left-block met_nav_img mb12"
+                        src="upload/202006/1592381497.jpg">
+                      <p class="mb15">服务热线：400-004-8087
+                        产品咨询：17856503919
+                        项目咨询：17856503919</p>
+                    </a>
+                    <a href="about/87.html" title="联系我们" class="met_btn" target='_self'>查看更多 ></a>
+                  </div>
+                  <div class="width_sty met_box_wrap     " style="width:25%">
+                    <h3>
+                      <a class="twobox_" href="qualification/" title="资质荣誉" target='_self'>
+                        资质荣誉 </a>
+                    </h3>
+                    <a href="qualification/" title="资质荣誉" target='_self' class="clearfix db">
+                      <img alt="资质荣誉" title="资质荣誉" class="img-responsive left-block met_nav_img mb12"
+                        src="upload/202007/1596014321.jpg">
+                      <p class="mb15">拥有自主品牌"瑞佰创"、“Raybaca”和多项专利著作权，拥有海关进出口相关资质。</p>
+                    </a>
+                    <a href="qualification/" title="资质荣誉" class="met_btn" target='_self'>查看更多 ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- 产品模块下拉 -->
+
+              <!-- about一级 -->
+              <div class="met_menu_section" data-section="metmm_80">
+                <div class="row">
+                  <div class="width_sty     " style="width:12.5%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="product/list-146.html" title="电子标识" target='_self'>
+                          电子标识 </a>
+                      </h3>
+                      <a href="product/166.html" title="RBC-ET24-UHF" target=_self>
+                        <div>
+                          <img alt="RBC-ET24-UHF" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202205/1651915778.jpg" />
+                        </div>
+                        <h4>RBC-ET24-UHF</h4>
+                      </a>
+                      <a href="product/list-146.html" title="电子标识" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:12.5%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="product/list-150.html" title="普通标识" target='_self'>
+                          普通标识 </a>
+                      </h3>
+                      <a href="product/194.html" title="RBC-ETP14" target=_self>
+                        <div>
+                          <img alt="RBC-ETP14" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202206/1654588544.jpg" />
+                        </div>
+                        <h4>RBC-ETP14</h4>
+                      </a>
+                      <a href="product/list-150.html" title="普通标识" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:12.5%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="product/list-147.html" title="阅读器" target='_self'>
+                          阅读器 </a>
+                      </h3>
+                      <a href="product/206.html" title="RBC-S18手持机" target=_self>
+                        <div>
+                          <img alt="RBC-S18手持机" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202211/1668835494.jpg" />
+                        </div>
+                        <h4>RBC-S18手持机</h4>
+                      </a>
+                      <a href="product/list-147.html" title="阅读器" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:12.5%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="product/list-149.html" title="配套工具" target='_self'>
+                          配套工具 </a>
+                      </h3>
+                      <a href="product/124.html" title="RBC-Q-G1耳标钳" target=_self>
+                        <div>
+                          <img alt="RBC-Q-G1耳标钳" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202206/1654506219.jpg" />
+                        </div>
+                        <h4>RBC-Q-G1耳标钳</h4>
+                      </a>
+                      <a href="product/list-149.html" title="配套工具" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:12.5%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="product/list-145.html" title="称重分栏" target='_self'>
+                          称重分栏 </a>
+                      </h3>
+                      <a href="product/142.html" title="牛只全自动称重分群系统" target=_self>
+                        <div>
+                          <img alt="牛只全自动称重分群系统" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202206/1654669554.jpg" />
+                        </div>
+                        <h4>牛只全自动称重分群系统</h4>
+                      </a>
+                      <a href="product/list-145.html" title="称重分栏" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:12.5%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="product/list-152.html" title="兽用B超" target='_self'>
+                          兽用B超 </a>
+                      </h3>
+                      <a href="product/127.html" title="兽用B超" target=_self>
+                        <div>
+                          <img alt="兽用B超" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202206/1654911481.jpg" />
+                        </div>
+                        <h4>兽用B超</h4>
+                      </a>
+                      <a href="product/list-152.html" title="兽用B超" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:12.5%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="product/list-151.html" title="传感器" target='_self'>
+                          传感器 </a>
+                      </h3>
+                      <a href="product/128.html" title="温湿度传感器" target=_self>
+                        <div>
+                          <img alt="温湿度传感器" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202206/1655536700.jpg" />
+                        </div>
+                        <h4>温湿度传感器</h4>
+                      </a>
+                      <a href="product/list-151.html" title="传感器" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                  <div class="width_sty     " style="width:12.5%">
+                    <div class="met_box_wrap text-center">
+                      <h3>
+                        <a class="twobox_" href="product/list-144.html" title="定位器" target='_self'>
+                          定位器 </a>
+                      </h3>
+                      <a href="product/112.html" title="RBC-DW-02" target=_self>
+                        <div>
+                          <img alt="RBC-DW-02" class="img-responsive center-block met_nav_img"
+                            data-img="upload/202206/1654668166.jpg" />
+                        </div>
+                        <h4>RBC-DW-02</h4>
+                      </a>
+                      <a href="product/list-144.html" title="定位器" class="met_btn" target='_self'>查看更多 ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+
+              <!-- about一级 -->
+              <div class="met_menu_section" data-section="metmm_83">
+                <div class="row">
+                  <div class="width_sty met_box_wrap     " style="width:33.333333333333%">
+                    <h3>
+                      <a class="twobox_" href="news/list-99.html" title="公司新闻" target='_self'>公司新闻</a>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="news/90.html" target="_blank" title="【动态】安徽省畜牧兽医学会科协服务站和分支机构工作座谈会， 在安徽瑞佰创物联科技有限公司圆满召开"
+                          target=_self>【动态】安徽省畜牧兽医学会科协服务站和分支机构工作座谈会， 在安徽瑞佰创物联科技有限公司圆满召开</a>
+                      </li>
+                      <li>
+                        <a href="news/109.html" target="_blank" title="助力打造江豚第一湾区域生态大米公共品牌，促进宿松水稻产业绿色发展，瑞佰创在行动！"
+                          target=_self>助力打造江豚第一湾区域生态大米公共品牌，促进宿松水稻产业绿色发展，瑞佰创在行动！</a>
+                      </li>
+                      <li>
+                        <a href="news/105.html" target="_blank" title="瑞佰创物联科技参加“安徽省肉羊良种联合攻关”项目推进会"
+                          target=_self>瑞佰创物联科技参加“安徽省肉羊良种联合攻关”项目推进会</a>
+                      </li>
+                      <li>
+                        <a href="news/103.html" target="_blank" title="“喜迎二十大 科普向未来”，全国科普日——瑞佰创物联科技带你了解智慧畜牧"
+                          target=_self>“喜迎二十大 科普向未来”，全国科普日——瑞佰创物联科技带你了解智慧畜牧</a>
+                      </li>
+                      <li>
+                        <a href="news/99.html" target="_blank"
+                          title="喜报，安徽瑞佰创物联科技在2022“领航杯”InnoBay国际创新创业大赛（安徽）数字经济专场暨资本对接会上荣获大赛三等奖"
+                          target=_self>喜报，安徽瑞佰创物联科技在2022“领航杯”InnoBay国际创新创业大赛（安徽）数字经济专场暨资本对接会上荣获大赛三等奖</a>
+                      </li>
+                      <li class="mt15">
+                        <a href="news/list-99.html" title="公司新闻" class="met_btn" target='_self'>查看更多 ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="width_sty met_box_wrap     " style="width:33.333333333333%">
+                    <h3>
+                      <a class="twobox_" href="news/list-100.html" title="公司展会" target='_self'>公司展会</a>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="news/104.html" target="_blank" title="第十九届长三角科技论坛畜牧业高质量发展论坛会，瑞佰创与您相约合肥"
+                          target=_self>第十九届长三角科技论坛畜牧业高质量发展论坛会，瑞佰创与您相约合肥</a>
+                      </li>
+                      <li>
+                        <a href="news/100.html" target="_blank" title="安徽瑞佰创物联科技参加中国羊业发展大会现场实拍！用物联网助力羊场科学养殖，降本增效"
+                          target=_self>安徽瑞佰创物联科技参加中国羊业发展大会现场实拍！用物联网助力羊场科学养殖，降本增效</a>
+                      </li>
+                      <li>
+                        <a href="news/65.html" target="_blank" title="瑞佰创物联应邀参加第十八届（2020）中国畜牧业博览会暨2020中国国际畜牧业博览会"
+                          target=_self>瑞佰创物联应邀参加第十八届（2020）中国畜牧业博览会暨2020中国国际畜牧业博览会</a>
+                      </li>
+                      <li>
+                        <a href="news/57.html" target="_blank" title="瑞佰创物联应邀参加首届中国草牧业发展论坛"
+                          target=_self>瑞佰创物联应邀参加首届中国草牧业发展论坛</a>
+                      </li>
+                      <li class="mt15">
+                        <a href="news/list-100.html" title="公司展会" class="met_btn" target='_self'>查看更多 ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="width_sty met_box_wrap     " style="width:33.333333333333%">
+                    <h3>
+                      <a class="twobox_" href="news/list-101.html" title="行业资讯" target='_self'>行业资讯</a>
+                    </h3>
+                    <ul>
+                      <li>
+                        <a href="news/113.html" target="_blank" title="专家建议：养殖户顺势出栏育肥猪，及时“落袋为安”"
+                          target=_self>专家建议：养殖户顺势出栏育肥猪，及时“落袋为安”</a>
+                      </li>
+                      <li>
+                        <a href="news/112.html" target="_blank" title="发改委:近日，国家将下达今年第五批中央猪肉储备"
+                          target=_self>发改委:近日，国家将下达今年第五批中央猪肉储备</a>
+                      </li>
+                      <li>
+                        <a href="news/111.html" target="_blank" title="国家统计局:9月下旬，生猪价格环比上涨2.1%"
+                          target=_self>国家统计局:9月下旬，生猪价格环比上涨2.1%</a>
+                      </li>
+                      <li>
+                        <a href="news/110.html" target="_blank" title="国庆期间，猪价“七连涨”。业内人士:节后猪价涨幅有望放缓"
+                          target=_self>国庆期间，猪价“七连涨”。业内人士:节后猪价涨幅有望放缓</a>
+                      </li>
+                      <li>
+                        <a href="news/102.html" target="_blank"
+                          title="开展精准饲喂、粪污清理、疫病防控等畜牧设备智能化升级标准研制 四部门印发《数字乡村标准体系建设指南》"
+                          target=_self>开展精准饲喂、粪污清理、疫病防控等畜牧设备智能化升级标准研制 四部门印发《数字乡村标准体系建设指南》</a>
+                      </li>
+                      <li class="mt15">
+                        <a href="news/list-101.html" title="行业资讯" class="met_btn" target='_self'>查看更多 ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- about一级 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner_met_36_4_62 page-bg" m-id='62' m-type="banner">
+      <div class="slick-slide" data-count="2">
+        <img class="cover-image" src="upload/202007/1594689669.jpg"
+          srcset='upload/thumb_src/x_767/1594689669.jpg 767w,upload/202007/1594689669.jpg'
+          sizes="(max-width: 767px) 767px" alt="" data-height='0|0|0' data-fade="false" data-autoplayspeed=4000>
+        <div class="banner-text" data-position="p-4|p-4" met-imgmask>
+
+          <div class='container'>
+            <div class='banner-text-con'>
+              <div>
+                <h3 class="animation-fade font-weight-500      " style="color:;font-size:px;"></h3>
+                <p class="animation-fade     " style='color:;font-size:px;'></p>
+                <div class="m-t-15 animation-slide-bottom banner-btn">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slick-slide" data-count="0">
+        <img class="cover-image" src="upload/202008/1598336155.jpg"
+          srcset='upload/thumb_src/x_767/1598336155.jpg 767w,upload/202008/1598336155.jpg'
+          sizes="(max-width: 767px) 767px" alt="" data-height='0|0|0' data-fade="false" data-autoplayspeed=4000>
+        <div class="banner-text" data-position="p-4|p-4" met-imgmask>
+
+          <div class='container'>
+            <div class='banner-text-con'>
+              <div>
+                <h3 class="animation-fade font-weight-500      " style="color:;font-size:px;"></h3>
+                <p class="animation-fade     " style='color:;font-size:px;'></p>
+                <div class="m-t-15 animation-slide-bottom banner-btn">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="notice_list_met_28_2_64 text-xs-left" m-id="64">
+      <div class="container">
+        <div class="notice clearfix">
+          <span class="notice-title">新闻快报：</span>
+          <div class="notice-swiper">
+            <div class="notice-ul" data-speed="50">
+              <a href="news/90.html" title="【动态】安徽省畜牧兽医学会科协服务站和分支机构工作座谈会， 在安徽瑞佰创物联科技有限公司圆满召开" target=_self>
+                【动态】安徽省畜牧兽医学会科协服务站和分支机构工作座谈会， 在安徽瑞佰创物联科技有限公司圆满召开 <span class="time">2022-06-24</span>
+              </a>
+              <a href="news/113.html" title="专家建议：养殖户顺势出栏育肥猪，及时“落袋为安”" target=_self>
+                专家建议：养殖户顺势出栏育肥猪，及时“落袋为安” <span class="time">2022-10-19</span>
+              </a>
+              <a href="news/112.html" title="发改委:近日，国家将下达今年第五批中央猪肉储备" target=_self>
+                发改委:近日，国家将下达今年第五批中央猪肉储备 <span class="time">2022-10-09</span>
+              </a>
+              <a href="news/111.html" title="国家统计局:9月下旬，生猪价格环比上涨2.1%" target=_self>
+                国家统计局:9月下旬，生猪价格环比上涨2.1% <span class="time">2022-10-09</span>
+              </a>
+              <a href="news/110.html" title="国庆期间，猪价“七连涨”。业内人士:节后猪价涨幅有望放缓" target=_self>
+                国庆期间，猪价“七连涨”。业内人士:节后猪价涨幅有望放缓 <span class="time">2022-10-09</span>
+              </a>
+            </div>
+          </div>
+          <a class="notice-more pull-xs-right" title="新闻资讯" href="news/" target='_self'>
+            <i class="icon wb-more-horizontal"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="product_list_met_83_1_56 met-index-body text-xs-center     bgcolor" m-id='56'>
+      <div class="container">
+        <h2 class="m-t-0 font-weight-300 invisible" data-plugin="appear" data-animate="slide-top" data-repeat="false">
+          新产品</h2>
+        <p class="desc font-weight-100 invisible" data-plugin="appear" data-animate="fade" data-repeat="false">
+          THE LATEST PRODUCT</p>
+        <ul
+          class="
+			    			blocks-xs-2					 	blocks-md-4 blocks-lg-4 blocks-xxl-4 imagesize index-product-list tab-pane active animation-scale-up"
+          id="product_list_met_83_1_56" role="tabpanel">
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+            <div class="service-shadow">
+              <a href="product/206.html" title="RBC-S18手持机" target=_self>
+                <img data-original="upload/thumb_src/800_500/1668835494.jpg" alt="RBC-S18手持机" data-scale="500x800">
+              </a>
+              <a href="product/206.html" title="RBC-S18手持机" class="service-info text-xs-left" target=_self>
+                <h3 class='m-y-5 font-weight-400'> <span style=''>RBC-S18手持机</span></h3>
+                <h4 class='m-b-10 font-weight-200'>一、产品介绍该手持机采用无线识读方式，支持FDX-B、HDX (ISO11784/85)格式的电子标</h4>
+              </a>
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+            <div class="service-shadow">
+              <a href="product/204.html" title="电力标签" target=_self>
+                <img data-original="upload/thumb_src/800_500/1667028655.jpg" alt="电力标签" data-scale="500x800">
+              </a>
+              <a href="product/204.html" title="电力标签" class="service-info text-xs-left" target=_self>
+                <h3 class='m-y-5 font-weight-400'> <span style=''>电力标签</span></h3>
+                <h4 class='m-b-10 font-weight-200'>电力标签应用于固定资产，作为设备的电子铭牌，实现电力设备的全生命周期管理，独特的算法，使电力设备具有</h4>
+              </a>
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+            <div class="service-shadow">
+              <a href="product/203.html" title="RBC-Z10 连续注射器" target=_self>
+                <img data-original="upload/thumb_src/800_500/1666773404.jpg" alt="RBC-Z10 连续注射器" data-scale="500x800">
+              </a>
+              <a href="product/203.html" title="RBC-Z10 连续注射器" class="service-info text-xs-left" target=_self>
+                <h3 class='m-y-5 font-weight-400'> <span style=''>RBC-Z10 连续注射器</span></h3>
+                <h4 class='m-b-10 font-weight-200'>一、注射器组成RBC-Z10 连续注射器由鲁尔顿、针筒、连接座、瓶托、活塞、手柄和手柄复位弹簧组成。</h4>
+              </a>
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+            <div class="service-shadow">
+              <a href="product/166.html" title="RBC-ET24-UHF" target=_self>
+                <img data-original="upload/thumb_src/800_500/1651915778.jpg" alt="RBC-ET24-UHF" data-scale="500x800">
+              </a>
+              <a href="product/166.html" title="RBC-ET24-UHF" class="service-info text-xs-left" target=_self>
+                <h3 class='m-y-5 font-weight-400'> <span style=''>RBC-ET24-UHF</span></h3>
+                <h4 class='m-b-10 font-weight-200'>专用于动物识别和电子化管理的电子器件</h4>
+              </a>
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+            <div class="service-shadow">
+              <a href="product/151.html" title="RBC-ET02-LF" target=_self>
+                <img data-original="upload/thumb_src/800_500/1662435103.png" alt="RBC-ET02-LF" data-scale="500x800">
+              </a>
+              <a href="product/151.html" title="RBC-ET02-LF" class="service-info text-xs-left" target=_self>
+                <h3 class='m-y-5 font-weight-400'> <span style=''>RBC-ET02-LF</span></h3>
+                <h4 class='m-b-10 font-weight-200'>专用于动物识别和电子化管理的电子器件，是动物的可被自动识别的电子身份证</h4>
+              </a>
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+            <div class="service-shadow">
+              <a href="product/149.html" title="RBC-ET01-UHF-FX" target=_self>
+                <img data-original="upload/thumb_src/800_500/1655539354.jpg" alt="RBC-ET01-UHF-FX" data-scale="500x800">
+              </a>
+              <a href="product/149.html" title="RBC-ET01-UHF-FX" class="service-info text-xs-left" target=_self>
+                <h3 class='m-y-5 font-weight-400'> <span style=''>RBC-ET01-UHF-FX</span></h3>
+                <h4 class='m-b-10 font-weight-200'>一种专用于动物识别和电子化管理的电子器件</h4>
+              </a>
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+            <div class="service-shadow">
+              <a href="product/111.html" title="RBC-ET20-UHF" target=_self>
+                <img data-original="upload/thumb_src/800_500/1651914686.jpg" alt="RBC-ET20-UHF" data-scale="500x800">
+              </a>
+              <a href="product/111.html" title="RBC-ET20-UHF" class="service-info text-xs-left" target=_self>
+                <h3 class='m-y-5 font-weight-400'> <span style=''>RBC-ET20-UHF</span></h3>
+                <h4 class='m-b-10 font-weight-200'>专用于动物识别和电子化管理的电子器件，是动物可被自动识别的电子身份证，人们可以方便地通过各种类型的专</h4>
+              </a>
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom50" data-repeat="false">
+            <div class="service-shadow">
+              <a href="product/110.html" title="RBC-ET22-UHF" target=_self>
+                <img data-original="upload/thumb_src/800_500/1654067065.jpg" alt="RBC-ET22-UHF" data-scale="500x800">
+              </a>
+              <a href="product/110.html" title="RBC-ET22-UHF" class="service-info text-xs-left" target=_self>
+                <h3 class='m-y-5 font-weight-400'> <span style=''>RBC-ET22-UHF</span></h3>
+                <h4 class='m-b-10 font-weight-200'>专用于动物识别和电子化管理的电子器件</h4>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <a href="product/" title="产品中心" target='_self' class="more">查看更多</a>
+      </div>
+    </div>
+
+    <section class="case_list_met_36_2_65 met-index-body" m-id="65">
+      <div class="container">
+        <div class="top">
+          <div class="left">
+            <p class="subtitle" data-plugin="appear" data-animate="fade" data-repeat="false">THE SMART RANCH SOLUTION
+            </p>
+            <h3 class="title" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">解决方案</h3>
+          </div>
+          <div class="right">
+            <a href="solution/" alt="解决方案" class="read-more" target='_self'>
+              <i class="icon fa-long-arrow-right" aria-hidden="true"
+                style="font-size: 22px;text-align: right;display: inline-block;"></i>
+            </a>
+            <p class="mask_text">每一个产品，都竭力更好</p>
+          </div>
+        </div>
+        <div class="bottom">
+          <ul class="my-product-list     			blocks-100
+						blocks-md-2 blocks-lg-3 blocks-xxl-3 no-space">
+            <li data-plugin="appear" data-animate="slide-left" data-repeat="false" class="product-li">
+              <div class="right-content">
+                <a class="content-a-title" href="solution/150.html" alt="" target=_self>
+                  <h4 class="content-title"></h4>
+                </a>
+                <p class="content-desc"></p>
+
+              </div>
+              <div class="img-box">
+                <img class="content-img" src="upload/202205/1651896663.jpg" title="" />
+              </div>
+            </li>
+
+            <li data-plugin="appear" data-animate="slide-right" data-repeat="false" class="product-li">
+              <div class="right-content">
+                <a class="content-a-title" href="solution/97.html" alt="" target=_self>
+                  <h4 class="content-title"></h4>
+                </a>
+                <p class="content-desc"></p>
+
+              </div>
+              <div class="img-box">
+                <img class="content-img" src="upload/202205/1651902074.jpg" title="" />
+              </div>
+            </li>
+
+            <li data-plugin="appear" data-animate="slide-left" data-repeat="false" class="product-li">
+              <div class="right-content">
+                <a class="content-a-title" href="solution/73.html" alt="" target=_self>
+                  <h4 class="content-title"></h4>
+                </a>
+                <p class="content-desc"></p>
+
+              </div>
+              <div class="img-box">
+                <img class="content-img" src="upload/202205/1651907718.jpg" title="" />
+              </div>
+            </li>
+
+            <li data-plugin="appear" data-animate="slide-right" data-repeat="false" class="product-li">
+              <div class="right-content">
+                <a class="content-a-title" href="solution/94.html" alt="&nbsp" target=_self>
+                  <h4 class="content-title">&nbsp</h4>
+                </a>
+                <p class="content-desc"></p>
+
+              </div>
+              <div class="img-box">
+                <img class="content-img" src="upload/202205/1651907872.jpg" title="&nbsp" />
+              </div>
+            </li>
+
+            <li data-plugin="appear" data-animate="slide-left" data-repeat="false" class="product-li">
+              <div class="right-content">
+                <a class="content-a-title" href="solution/70.html" alt="" target=_self>
+                  <h4 class="content-title"></h4>
+                </a>
+                <p class="content-desc"></p>
+
+              </div>
+              <div class="img-box">
+                <img class="content-img" src="upload/202205/1651896562.jpg" title="" />
+              </div>
+            </li>
+
+            <li data-plugin="appear" data-animate="slide-right" data-repeat="false" class="product-li">
+              <div class="right-content">
+                <a class="content-a-title" href="solution/71.html" alt="&nbsp" target=_self>
+                  <h4 class="content-title">&nbsp</h4>
+                </a>
+                <p class="content-desc"></p>
+
+              </div>
+              <div class="img-box">
+                <img class="content-img" src="upload/202205/1651908218.jpg" title="&nbsp" />
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="news_list_met_11_3_60  text-xs-left" m-id='60'>
+      <div class="container">
+        <div class="title-box clearfix">
+          <div class="head">
+            <h2 class="title">新闻资讯</h2>
+            <p class="desc"></p>
+          </div>
+          <ul class="tabs clearfix">
+            <li class="active">
+              <a href="news/" title="新闻资讯" target='_self'>
+                <h3>全部</h3>
+              </a>
+            </li>
+            <li>
+              <a href="news/list-99.html" title="公司新闻" target='_self'>
+                <h3>公司新闻</h3>
+              </a>
+            </li>
+            <li>
+              <a href="news/list-100.html" title="公司展会" target='_self'>
+                <h3>公司展会</h3>
+              </a>
+            </li>
+            <li>
+              <a href="news/list-101.html" title="行业资讯" target='_self'>
+                <h3>行业资讯</h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="img-news clearfix">
+          <ul class="imgnews-list">
+            <li class="item-1">
+              <div class="img">
+                <a href="news/90.html" title="【动态】安徽省畜牧兽医学会科协服务站和分支机构工作座谈会， 在安徽瑞佰创物联科技有限公司圆满召开" target=_self><img
+                    data-original="upload/202206/1656052365.jpg"
+                    alt="【动态】安徽省畜牧兽医学会科协服务站和分支机构工作座谈会， 在安徽瑞佰创物联科技有限公司圆满召开"></a>
+              </div>
+              <div class="text clearfix">
+                <div class="date">
+                  <span class="day">24</span>
+                  <span class="year">2022-06</span>
+                </div>
+                <div class="content">
+                  <h3>
+                    <a href="news/90.html" title="【动态】安徽省畜牧兽医学会科协服务站和分支机构工作座谈会， 在安徽瑞佰创物联科技有限公司圆满召开" target=_self> <span
+                        style=''>【动态】安徽省畜牧兽医学会科协服务站和分支机构工作座谈会， 在安徽瑞佰创物联科技有限公司圆满召开</span></a>
+                  </h3>
+                  <p>
+                    2022年6月23日下午3点，安徽省畜牧兽医学会科协服务站和分支机构工作座谈会在安徽瑞佰创物联科技有限公司顺利召开，省畜牧兽医学会理事长、秘书长、常务副秘书长、科协服务站站长、分会理事长、分会秘书长、工作委员会主任委员、工作委员会副主任委员等相关部门和领导参会。安徽省畜牧兽医学会理事长董卫星依据安徽省畜牧兽医学会2022年工作计划安排作重要讲话，总结了科协服务站和分会2022年上半年的工作
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="item-other item-2 clearfix">
+              <a href="news/113.html" title="专家建议：养殖户顺势出栏育肥猪，及时“落袋为安”" target=_self>
+                <div class="text">
+                  <h3 class="title">
+                    <span style=''>专家建议：养殖户顺势出栏育肥猪，及时“落袋为安”</span>
+                  </h3>
+                  <p class="m-y-0">
+                    近日，国家发改委价格司组织行业专家对近期生猪市场供求和价格形势进行了分析研判。专家指出，从历史数据来看，剔除生猪产能受到严重冲击的2019年至2020年这几个极其特殊的年份，2019年之前的历次“猪周期”生猪均价最高在每公斤21元左右。即使考虑到近年来成本上涨的因素，目前的价格也已经处于过高的水平。专家认为，近期生猪价格明显上涨，重要原因是部分养殖户为争夺后市，出现压栏、惜售、二次育肥等非理性行为
+                  </p>
+                </div>
+                <div class="date">
+                  <span class="day">19</span>
+                  <span class="year">2022-10</span>
+                </div>
+              </a>
+            </li>
+            <li class="item-other clearfix">
+              <a href="news/112.html" title="发改委:近日，国家将下达今年第五批中央猪肉储备" target=_self>
+                <h3 class="title">
+                  <span style=''>发改委:近日，国家将下达今年第五批中央猪肉储备</span>
+                </h3>
+                <i class="fa fa-angle-right"></i>
+                <span class="time">2022-10-09</span>
+              </a>
+            </li>
+            <li class="item-other clearfix">
+              <a href="news/111.html" title="国家统计局:9月下旬，生猪价格环比上涨2.1%" target=_self>
+                <h3 class="title">
+                  <span style=''>国家统计局:9月下旬，生猪价格环比上涨2.1%</span>
+                </h3>
+                <i class="fa fa-angle-right"></i>
+                <span class="time">2022-10-09</span>
+              </a>
+            </li>
+            <li class="item-other clearfix">
+              <a href="news/110.html" title="国庆期间，猪价“七连涨”。业内人士:节后猪价涨幅有望放缓" target=_self>
+                <h3 class="title">
+                  <span style=''>国庆期间，猪价“七连涨”。业内人士:节后猪价涨幅有望放缓</span>
+                </h3>
+                <i class="fa fa-angle-right"></i>
+                <span class="time">2022-10-09</span>
+              </a>
+            </li>
+            <li class="item-other clearfix">
+              <a href="news/109.html" title="助力打造江豚第一湾区域生态大米公共品牌，促进宿松水稻产业绿色发展，瑞佰创在行动！" target=_self>
+                <h3 class="title">
+                  <span style=''>助力打造江豚第一湾区域生态大米公共品牌，促进宿松水稻产业绿色发展，瑞佰创在行动！</span>
+                </h3>
+                <i class="fa fa-angle-right"></i>
+                <span class="time">2022-09-28</span>
+              </a>
+            </li>
+            <li class="item-other clearfix">
+              <a href="news/105.html" title="瑞佰创物联科技参加“安徽省肉羊良种联合攻关”项目推进会" target=_self>
+                <h3 class="title">
+                  <span style=''>瑞佰创物联科技参加“安徽省肉羊良种联合攻关”项目推进会</span>
+                </h3>
+                <i class="fa fa-angle-right"></i>
+                <span class="time">2022-09-20</span>
+              </a>
+            </li>
+            <li class="item-other clearfix">
+              <a href="news/104.html" title="第十九届长三角科技论坛畜牧业高质量发展论坛会，瑞佰创与您相约合肥" target=_self>
+                <h3 class="title">
+                  <span style=''>第十九届长三角科技论坛畜牧业高质量发展论坛会，瑞佰创与您相约合肥</span>
+                </h3>
+                <i class="fa fa-angle-right"></i>
+                <span class="time">2022-09-20</span>
+              </a>
+            </li>
+            <li class="item-other clearfix">
+              <a href="news/103.html" title="“喜迎二十大 科普向未来”，全国科普日——瑞佰创物联科技带你了解智慧畜牧" target=_self>
+                <h3 class="title">
+                  <span style=''>“喜迎二十大 科普向未来”，全国科普日——瑞佰创物联科技带你了解智慧畜牧</span>
+                </h3>
+                <i class="fa fa-angle-right"></i>
+                <span class="time">2022-09-20</span>
+              </a>
+            </li>
+            <li class="item-other clearfix">
+              <a href="news/102.html" title="开展精准饲喂、粪污清理、疫病防控等畜牧设备智能化升级标准研制 四部门印发《数字乡村标准体系建设指南》" target=_self>
+                <h3 class="title">
+                  <span style=''>开展精准饲喂、粪污清理、疫病防控等畜牧设备智能化升级标准研制 四部门印发《数字乡村标准体系建设指南》</span>
+                </h3>
+                <i class="fa fa-angle-right"></i>
+                <span class="time">2022-09-09</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="news/" title="新闻资讯" target='_self' class="btn-more">
+          MORE <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <div class="partner_list_met_28_1_66 met-index-body     bgcolor" m-id='66'>
+      <div class="container text-xs-center">
+        <div class="block-title">
+          <img src="" alt="" class="    ">
+          <h2 class="title invisible" data-plugin="appear" data-animate="slide-top" data-repeat="false">合作伙伴</h2>
+          <img src="" alt="" class="    ">
+        </div>
+        <p class="desc invisible" data-plugin="appear" data-animate="fade" data-repeat="false">COOPERATIVE PARTNER</p>
+        <ul
+          class="
+                            blocks-xs-9                        blocks-md-9 blocks-lg-9 blocks-xxl-9 no-space imglist p-l-0"
+          data-scale='x'>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662365080.jpg" class="overlay-scale     ""alt=" 中国联通">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662365482.jpg" class="overlay-scale     ""alt=" 中国电信">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662364957.jpg" class="overlay-scale     ""alt=" 牧原">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662365398.jpg" class="overlay-scale     ""alt=" 正邦">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662365175.jpg" class="overlay-scale     ""alt=" 天邦">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662361890.jpg" class="overlay-scale     ""alt=" 太平洋保险">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662360596.jpg" class="overlay-scale     ""alt=" 中国人保财险">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662360579.jpg" class="overlay-scale     ""alt=" 南江黄羊原种场">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662361391.jpg" class="overlay-scale     ""alt=" 内蒙古盛健羊乳">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662360552.jpg" class="overlay-scale     ""alt=" 浙江赛诺生态农业">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662361954.jpg" class="overlay-scale     ""alt=" 中华联合财产保险">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662360351.jpg" class="overlay-scale     ""alt=" 甘肃元生农牧">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662360990.jpg" class="overlay-scale     ""alt=" 潍坊舜耕">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662360475.jpg" class="overlay-scale     ""alt=" 航天云网">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662361587.jpg" class="overlay-scale     ""alt=" 中粮">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662361868.jpg" class="overlay-scale     ""alt=" 乐科生物技术">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662360682.jpg" class="overlay-scale     ""alt=" 融侨集团">
+            </div>
+          </li>
+          <li class="invisible" data-plugin="appear" data-animate="slide-bottom" data-repeat="false">
+            <div class="overlay overlay-hover">
+              <img data-original="upload/thumb_src/200_95/1662361788.jpg" class="overlay-scale     ""alt=" 金草原">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact_met_35_1_58 text-xs-center met-index-body" m-id="58" m-type="nocontent">
+      <div class="container">
+        <div class="inquiryMain clearfix">
+          <div class="left ">
+            <h3 class="tit">为你提供优质的解决方案和产品</h3>
+            <ul class="list clearfix ulstyle">
+              <li>动物标识</li>
+              <li>阅读机具</li>
+              <li>智能硬件</li>
+              <li>解决方案</li>
+            </ul>
+          </div>
+          <div class="right ">
+            <div class="zx ">
+              <img src="upload/202006/1592462051.png" alt="咨询热线">
+              <p>咨询热线</p>
+            </div>
+            <a href="tel:400-004-8087">
+              <div class="tel">400-004-8087</div>
+            </a>
+            <a href="about/" target="_blank" class="btn">更多信息</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class='foot_info_met_35_3_4 met-foot  border-top1' m-id='4' m-type='foot'>
+      <div class="footer_widget_area">
+        <div class="container">
+          <div class="down_L col-lg-6  col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-3 col-md-3 col-xs-6 list">
+              <h4 class='font-size-16 m-t-0 list'>
+                <a href="casestudy/" title="项目案例"> <span style=''>项目案例</span></a>
+              </h4>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-6 list">
+              <h4 class='font-size-16 m-t-0 list'>
+                <a href="solution/" title="解决方案"> <span style=''>解决方案</span></a>
+              </h4>
+              <ul class='ulstyle m-b-0'>
+                <li>
+                  <a href="solution/list-252.html" title="智慧牧场" target='_self'> <span style=''>智慧牧场</span></a>
+                </li>
+                <li>
+                  <a href="solution/list-253.html" title="屠宰溯源" target='_self'> <span style=''>屠宰溯源</span></a>
+                </li>
+                <li>
+                  <a href="solution/list-254.html" title="综合性牧场建设" target='_self'> <span style=''>综合性牧场建设</span></a>
+                </li>
+                <li>
+                  <a href="solution/list-255.html" title="政府" target='_self'> <span style=''>政府</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-6 list">
+              <h4 class='font-size-16 m-t-0 list'>
+                <a href="about/" title="关于我们"> <span style=''>关于我们</span></a>
+              </h4>
+              <ul class='ulstyle m-b-0'>
+                <li>
+                  <a href="about/85.html" title="公司简介" target='_self'> <span style=''>公司简介</span></a>
+                </li>
+                <li>
+                  <a href="about/86.html" title="企业文化" target='_self'> <span style=''>企业文化</span></a>
+                </li>
+                <li>
+                  <a href="about/87.html" title="联系我们" target='_self'> <span style=''>联系我们</span></a>
+                </li>
+                <li>
+                  <a href="qualification/" title="资质荣誉" target='_self'> <span style=''>资质荣誉</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-6 list">
+              <h4 class='font-size-16 m-t-0 list'>
+                <a href="product/" title="产品中心"> <span style=''>产品中心</span></a>
+              </h4>
+              <ul class='ulstyle m-b-0'>
+                <li>
+                  <a href="product/list-146.html" title="电子标识" target='_self'> <span style=''>电子标识</span></a>
+                </li>
+                <li>
+                  <a href="product/list-150.html" title="普通标识" target='_self'> <span style=''>普通标识</span></a>
+                </li>
+                <li>
+                  <a href="product/list-147.html" title="阅读器" target='_self'> <span style=''>阅读器</span></a>
+                </li>
+                <li>
+                  <a href="product/list-149.html" title="配套工具" target='_self'> <span style=''>配套工具</span></a>
+                </li>
+                <li>
+                  <a href="product/list-145.html" title="称重分栏" target='_self'> <span style=''>称重分栏</span></a>
+                </li>
+                <li>
+                  <a href="product/list-152.html" title="兽用B超" target='_self'> <span style=''>兽用B超</span></a>
+                </li>
+                <li>
+                  <a href="product/list-151.html" title="传感器" target='_self'> <span style=''>传感器</span></a>
+                </li>
+                <li>
+                  <a href="product/list-144.html" title="定位器" target='_self'> <span style=''>定位器</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="down_R col-lg-6  col-md-12 col-sm-12 col-xs-12">
+            <div class="r_fist col-lg-5">
+              <div class="r_span">
+                <div class="top1">
+                  <p class="p1">瑞佰创物联科技</p>
+                  <p class="p2">全国服务热线：</p>
+                  <p class="p3"><span style="font-size:25px">400-004-8087</span></p>
+                </div>
+              </div>
+              <div class="fx">
+                <span class="span_lf"> </span>
+              </div>
+            </div>
+            <div class="r_last col-lg-7">
+              <div class="er_fist">
+                <img src="upload/202007/1594697474.jpg" alt="$ui.er_descfistr" />
+                <p class="edesc">关注微信公众号</p>
+              </div>
+              <div class="er_lasr">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 底部信息 -->
+        <div class="footer_copy_right">
+          <div class="container mydibucontainer">
+            <div class="met_lang_all mymet_lang_all">
+              <!-- 语言 -->
+              <!-- 简繁体 -->
+            </div>
+            <p class="my_p">
+            <p class="my_p">总部地址：安徽省合肥市经济开发区九龙路高校三创园1号楼14层(安徽瑞佰创物联科技有限公司)工厂地址：安徽省六安市舒城县杭埠镇舒城电子信息产业园A3座</p>
+            产品合作(微信同号):17856503919 项目合作(微信同号):17856503919 <p>
+              牛耳标、羊耳标、猪耳标、超高频电子耳标、低频电子耳标、植入式电子标签、加密标签、防疫耳标、金融耳标、RFID阅读器、智能手持终端、太阳能定位器、智能盘点通道、自动称重分栏、智慧牧场管理平台、屠宰溯源管理平台、育种软件<br />
+            </p>
+            </p>
+            <div class="powered_by_metinfo">
+              <p>Powered by&nbsp;<a href="https://www.raybaca.com" target="_blank" title="Raybaca IOT|瑞佰创物联科技"><strong
+                    style="white-space: normal;">Raybaca IOT</strong></a>&nbsp;©2009-2022 &nbsp;<a target="_blank"
+                  href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34019102001064"
+                  style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#939393;"><img
+                    src="/upload/beian.png" style="float:left;">&nbsp;皖公网安备 34019102001064号&nbsp;</a><a
+                  href="https://beian.miit.gov.cn" style="color:#939393;" target="_blank"
+                  title="工信部备案管理系统">&nbsp;皖ICP备2022008766号-2</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="foot_info_met_35_3_4_bottom text-xs-center     " m-id='4' data-bg="|#014ab0|1" data-ifbotc="">
+      <div class="main">
+        <div style="background-color: ;">
+          <a href="" class="item" style="color: ;">
+            <i class="icon fa-home"></i>
+            <span>网站首页</span>
+          </a>
+        </div>
+        <div style="background-color: ;">
+          <a href="product" class="item" style="color: ;">
+            <i class="icon fa-cogs"></i>
+            <span>产品中心</span>
+          </a>
+        </div>
+        <div style="background-color: ;">
+          <a href="solution" class="item" style="color: ;">
+            <i class="icon fa-cubes"></i>
+            <span>解决方案</span>
+          </a>
+        </div>
+        <div style="background-color: ;">
+          <a href="https://wpa.qq.com/msgrd?v=3&uin=2853750231&site=qq&menu=yes" class="item" style="color: ;">
+            <i class="icon fa-qq"></i>
+            <span>在线订购</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="back_top_met_11_2_6     " hidden m-id='6' m-type='nocontent'>
+      <img src="upload/202007/1594804954.png" alt="">
+    </button>
+
+
+    <input type="hidden" name="met_lazyloadbg" value="">
+    <script src="cache/lang_json_cn.js?1668565608"></script>
+    <script src="public/web/js/basic.js?1666344189" data-js_url="templates/mui891/cache/index_cn.js?1670220788"
+      id="met-page-js"></script>
+  </body>
+
+</html>

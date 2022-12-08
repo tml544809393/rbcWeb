@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>瑞佰创</title>
+    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="static/css/footer.css" />
+    <link rel="stylesheet" href="static/css/header_main.css" />
+    <style>
+        .solution_banner {
+            width: 100%;
+            height: 492px;
+            position: relative;
+        }
+
+        .solution_banner span {
+            font-size: 42px;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            letter-spacing: 6px;
+
+        }
+
+        .solution_main {
+            max-width: 1440px;
+            width: 100%;
+            margin: 100px auto;
+        }
+
+        .solu_main_box span {
+            margin-left: 20px;
+            letter-spacing: 4px;
+        }
+
+        .solu_main_box {
+            width: 25%;
+            height: 110px;
+            background: linear-gradient(90deg, #0A70F5, #48AEFF);
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 17px;
+        }
+
+        .solu_main_box_before:before {
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-top: 16px solid #0A70F5;
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+            position: absolute;
+            top: 110px;
+        }
+
+        .solu_boxs {
+            display: flex;
+        }
+
+        .solu_clo {
+            margin-top: 56px;
+            display: flex;
+        }
+
+        .solu_portrait {
+            width: 331px;
+            height: 75px;
+            background: #3399FC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .solu_portrait :nth-last-child(1) {
+            margin-bottom: 0;
+        }
+
+        .solu_portrait img {
+            width: 36px;
+            height: 36px;
+            margin-right: 29px;
+        }
+
+        .solu_prot_box {
+            width: 25%;
+        }
+
+        .solu_right {
+            width: 60%;
+            position: relative;
+        }
+
+        .solu_right img {
+            object-fit: cover;
+        }
+
+        .solu_right_pos {
+            width: 32%;
+            background: linear-gradient(90deg, #0A70F5, #48AEFF);
+            position: absolute;
+            top: 132px;
+            right: -198px;
+            color: #fff;
+            font-weight: 500;
+            padding: 25px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .solu_right_pos span {
+            text-align: center;
+        }
+
+        .solu_right_more {
+            padding: 2px 19px;
+            background: #FFFFFF;
+            border-radius: 16px;
+            font-weight: 500;
+            color: #0C72F5;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            margin-top: 28px;
+            margin-bottom: 15px;
+        }
+
+        .solu_right_more img {
+            width: 5px;
+            height: 12px;
+            margin-left: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="preloader">
+            <div class="spinner-border text-primary"></div>
+        </div>
+    </div>
+    <header class="main-header-area header-transparent header-sticky">
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-xl-2 col-md-6 col-6">
+                        <div class="header-logo d-flex align-items-center">
+                            <a href="index.html">
+                                <img class="nonsticky-logo img-full" src="/static/image/log1.png" alt="Header Logo">
+                                <img class="sticky-logo img-full" src="/static/image/logo.png" alt="Header Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 col-md-6 col-6 d-flex justify-content-end">
+                        <nav class="main-nav d-none d-lg-flex">
+                            <ul class="nav">
+                                <li><a class="active" href="index.html"><span class="menu-text">网站首页</span><i
+                                            class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-submenu dropdown-hover">
+
+                                    </ul>
+                                </li>
+                                <li><a href=""><span class="menu-text">解决方案</span></a></li>
+                                <li><a href="product.html"><span class="menu-text">产品中心</span></a></li>
+                                <li><a href=""><span class="menu-text">客户案例</span></a></li>
+                                <li><a href=""><span class="menu-text">关于我们</span><i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-submenu dropdown-hover">
+                                        <li><a href="">Portfolio One</a></li>
+                                        <li><a href="">Portfolio Two</a></li>
+                                        <li><a href="">Portfolio Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href=""><span class="menu-text">新闻资讯</span><i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-submenu dropdown-hover">
+                                        <li><a href="">Blog</a></li>
+                                        <li><a href="">Blog Left Sidebar</a></li>
+                                        <li><a href="">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href=""><span class="menu-text">服务支持</span></a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-right-area main-nav">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="lang">
+                    <div class="lang_e">
+                        <img class="sticky-logo" src="/static/image/lang_w.png" alt="">
+                        <img class=" nonsticky-logo" src="/static/image/lang_b.png" alt="">
+                    </div>
+                    <div class="search">
+                        <img class="sticky-logo" src="/static/image/search.png" alt="">
+                        <img class="nonsticky-logo" src="/static/image/search_b.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 导航栏下划菜单 -->
+        <aside class="off-canvas-wrapper" id="mobileMenu">
+            <div class="off-canvas-overlay"></div>
+            <div class="off-canvas-inner-content">
+                <div class="btn-close-off-canvas"><i class="fa fa-times"></i></div>
+                <div class="off-canvas-inner">
+                    <div class="offcanvas-widget-area">
+                        <div class="search-box-wrap off-canvas-item">
+                            <form action="#" method="post">
+                                <input placeholder="Search..">
+                                <button class="btn-search"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="mobile-navigation">
+                            <nav>
+                                <ul class="mobile-menu">
+                                    <li class="menu-item-has-children"><a href="#">Home</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">Home One</a></li>
+                                            <li><a href="index-2.html">Home Two</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Service</a></li>
+                                    <li class="menu-item-has-children"><a href="#">Portfolio</a>
+                                        <ul class="dropdown">
+                                            <li><a href="">Portfolio One</a></li>
+                                            <li><a href="">Portfolio Two</a></li>
+                                            <li><a href="">Portfolio Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#">Blog</a>
+                                        <ul class="dropdown">
+                                            <li><a href="">Blog</a></li>
+                                            <li><a href="">Blog Left Sidebar</a></li>
+                                            <li><a href="">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <!-- mobile menu navigation end -->
+                        </div>
+                        <!-- mobile menu end -->
+                        <!-- Soclial Link Start -->
+                        <div class="widget-social"><a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a><a
+                                title="Twitter" href="#"><i class="fa fa-twitter"></i></a><a title="Linkedin"
+                                href="#"><i class="fa fa-linkedin"></i></a><a title="Youtube" href="#"><i
+                                    class="fa fa-youtube"></i></a><a title="Vimeo" href="#"><i
+                                    class="fa fa-vimeo"></i></a></div>
+                        <!-- Social Link End -->
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <aside class="off-canvas-search-wrapper">
+            <div class="off-canvas-overlay"></div>
+            <div class="off-canvas-inner-content">
+                <div class="off-canvas-inner">
+                    <form action="#" method="post">
+                        <input type="search" placeholder="Search..">
+                        <button class="search-btn"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        <aside class="off-canvas-menu-wrapper" id="sideMenu">
+            <div class="off-canvas-overlay"></div>
+            <div class="off-canvas-inner-content">
+                <div class="off-canvas-inner">
+                    <div class="offcanvas-widget-area">
+                        <div class="search-box-wrap off-canvas-item">
+                            <form action="#" method="post">
+                                <input placeholder="Search..">
+                                <button class="btn-search"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <!-- End Search Box -->
+                        <ul class="menu-top-menu">
+                            <li><span>Who We Are</span></li>
+                        </ul>
+                        <p class="desc-content">Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="useful-link">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">Portfolio</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                        <div class="widget-social">
+                            <ul class="menu-top-menu">
+                                <li><span>Connect With Us</span></li>
+                            </ul>
+                            <a title="Facebook" href="#"><i class="fa fa-facebook-f"></i></a><a title="Twitter"
+                                href="#"><i class="fa fa-twitter"></i></a><a title="Linkedin" href="#"><i
+                                    class="fa fa-linkedin"></i></a><a title="Youtube" href="#"><i
+                                    class="fa fa-youtube"></i></a><a title="Vimeo" href="#"><i
+                                    class="fa fa-vimeo"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-close-off-canvas"><i class="fa fa-times"></i></div>
+            </div>
+        </aside>
+    </header>
+    <div class="solution_banner" data-aos="fade-up" data-aos-delay="300">
+        <img src="/static/image/solution.jpg" alt="">
+        <span>助力智慧畜牧业 &nbsp; 打造行业领跑者</span>
+    </div>
+    <div class="solution_main" data-aos="fade-up" data-aos-delay="300">
+        <div>
+            <div class="solu_boxs">
+                <div class="solu_main_box solu_main_box_before">
+                    <img style="width:45px;height:45px" src="/static/image/solu_1.png" alt="">
+                    <span>智慧牧场</span>
+                </div>
+                <div class="solu_main_box" style="background: linear-gradient(90deg, #00B6E8, #37DDF0);">
+                    <img style="width:45px;height:45px" src="/static/image/solu_2.png" alt="">
+                    <span>屠宰溯源</span>
+                </div>
+                <div class="solu_main_box" style="background: linear-gradient(90deg, #0CDA8E, #29E9AD);">
+                    <img style="width:45px;height:45px" src="/static/image/solu_3.png" alt="">
+                    <span>综合性牧场建设</span>
+                </div>
+                <div class="solu_main_box" style="background: linear-gradient(90deg, #D7912C, #E2AF26);">
+                    <img style="width:45px;height:45px" src="/static/image/solu_2.png" alt="">
+                    <span>政府</span>
+                </div>
+            </div>
+            <div class="solu_clo">
+                <div class="solu_prot_box">
+                    <div class="solu_portrait">
+                        <img src="/static/image/solu_4.png" alt="">
+                        <div>智慧羊企业管理系统</div>
+                    </div>
+                    <div class="solu_portrait">
+                        <img src="/static/image/solu_4.png" alt="">
+                        <div>智能养猪通道盘点车</div>
+                    </div>
+                    <div class="solu_portrait">
+                        <img src="/static/image/solu_4.png" alt="">
+                        <div>生物资产管理系统</div>
+                    </div>
+                    <div class="solu_portrait">
+                        <img src="/static/image/solu_4.png" alt="">
+                        <div>生物资产管理系统</div>
+                    </div>
+                    <div class="solu_portrait">
+                        <img src="/static/image/solu_4.png" alt="">
+                        <div>智能养牛管理系统</div>
+                    </div>
+                    <div class="solu_portrait">
+                        <img src="/static/image/solu_4.png" alt="">
+                        <div>智能养猪管理系统</div>
+                    </div>
+                </div>
+                <div class="solu_right">
+                    <div style="height:550px;"><img src="/static/image/sulu_5.png" alt=""></div>
+                    <div class="solu_right_pos">
+                        <span>每只羊从出生开始佩戴电子耳标， 对整个生命周期的羊只档案、系谱 关系，健康信息、繁育信息，包括 饲养环境进行全程科学养殖管理</span>
+                        <div class="solu_right_more">
+                            <span>查看详情</span>
+                            <img src="/static/image/solu_right.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- data-aos="fade-up" data-aos-delay="300"  -->
+    <div class="headers">
+        <div class="footer" data-aos="fade-up" data-aos-delay="300">
+            <div class="footer_left">
+                <div class="footer_logo">
+                    <div class="footer_img">
+                        <img src="/static//image/logo.png" alt="">
+                    </div>
+                    <span>助力智慧畜牧业 打造行业领跑者</span>
+                </div>
+
+                <div class="footer_title">
+                    <span>网站首页</span>
+                    <span>解决方案</span>
+                    <span>产品中心</span>
+                    <span>关于我们</span>
+                    <span>新闻资讯</span>
+                    <span>客户案例</span>
+                    <span>服务支持</span>
+                </div>
+            </div>
+            <div class="footer_right">
+                <div class="footer_contact">
+                    <span>400 8701 088</span>
+                    <span>24小时联系电话</span>
+                    <div class="footer_wx_img"><img src="https://www.raybaca.com/upload/202007/1594697474.jpg" alt="">
+                    </div>
+                    <span>关注微信公众号</span>
+                </div>
+            </div>
+        </div>
+        <div style="height: 1px;background-color: #C6C6C6;"></div>
+        <div class="bottom">
+            <span>瑞佰创物联科技</span>
+            <span>©2009-2022 </span>
+            <span>皖公网安备 34019102001064号</span>
+            <span>皖ICP备2022008766号-2</span>
+        </div>
+    </div>
+    <script src="assets/js/vendor/vendor.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <script>
+        (function (doc, win) {
+            let fn = () => {
+                let docEl = doc.documentElement,
+                    clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = 100 * (clientWidth / 1920) + 'px';
+
+            }
+            if (!doc.addEventListener) return;
+            win.addEventListener('resize', fn);
+            doc.addEventListener('DOMContentLoaded', fn);
+        })(document, window);
+    </script>
+</body>
+
+</html>
